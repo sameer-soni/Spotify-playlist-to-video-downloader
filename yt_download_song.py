@@ -19,7 +19,6 @@ def download_video(name, artist):
         # Create a YouTube object
         yt = YouTube(stream_url, on_progress_callback=on_progress)
 
-        # Get the highest resolution video stream
         stream = yt.streams.get_highest_resolution()
 
         print(file_name)
@@ -36,7 +35,3 @@ def download_video(name, artist):
         print("Error: Invalid URL")
     except Exception as e:
         print("Error downloading video:", str(e))
-
-
-# Example usage
-# download_video('save me', 'ramy zero')

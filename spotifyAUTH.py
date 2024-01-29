@@ -1,5 +1,3 @@
-import json
-
 from dotenv import load_dotenv
 import os
 import base64
@@ -10,7 +8,6 @@ load_dotenv()
 
 Client_id = os.getenv("CLIENT_ID")
 Client_secret = os.getenv("CLIENT_SECRET")
-# print(Client_id,Client_secret)
 
 
 def get_token():
